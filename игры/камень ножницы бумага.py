@@ -1,8 +1,7 @@
 print("Камень ножницы бумага")
 from random import *
-b = int(input("Введите число от 1 до 3, 1 - камень, 2 - ножницы, 3 - бумага"))
+b = int(input("Введите число от 1 до 3, 1 - камень, 2 - ножницы, 3 - бумага \n"))
 a = randint(1,3)
-print(a)
 first = 1
 second = 2
 third = 3
@@ -21,8 +20,15 @@ elif b == third and a == second:
 elif b == second and a ==first:
     print("Камень")
     print("Вы проиграли!")
-elif b == second and a == third:
+elif b == third and a == first:
     print("Бумага")
     print("Вы выйграли!")
+elif b == first and a == first:
+    print("Камень")
+    print("Ничья")
+elif b == second and a == second:
+    print("Ножницы")
+    print("Ничья")
 else:
-	print("Ничья")
+    print("Бумага")
+    print("Ничья")
