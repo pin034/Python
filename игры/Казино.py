@@ -20,7 +20,7 @@ while i > 0:
          else:
             print("Выпало красное", chi)
          if chi == d:
-            y = y + (a * 5)
+            y = y + (a * 4)
             print("Ваша ставка умножена в 5 раз! Теперь у вас:", y)
          elif 6 > chi and 6 > d:
             y = y + (a * 3)
