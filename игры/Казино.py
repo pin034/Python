@@ -11,11 +11,9 @@ while i == 1:
       elif a == 0 and d == 100:
          y = 0
       else:
-         h = d % 2
-         g = chi % 2
          if chi <= 5:
             print("Выпало зелёное.", chi)
-         elif g == 0:
+         elif chi % 2 == 0:
             print("Выпало чёрное.", chi)
          else:
             print("Выпало красное.", chi)
@@ -25,7 +23,7 @@ while i == 1:
          elif 6 > chi and 6 > d:
             y = y + (a * 3)
             print("Ваша ставка умножена в 4 раза! Теперь у вас:", y)
-         elif h == g and d > 5:
+         elif d % 2 == chi % 2 and d > 5:
             y = y + a
             print("Ваша ставка умножена в 2 раза! Теперь у вас:", y)
          else:
