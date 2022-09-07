@@ -2,7 +2,7 @@ from random import *
 i = "да"
 while i == "да":
    y = 1000
-   print ("Ваш баланц - ", y)
+   print ("Ваш баланс - ", y)
    while y > 0:
       a,d = map(int,input("Выберите ставку и число на которое ставите, от 0 до 99. Забрать выйгрыш - 0 100.\n").split(" "))
       chi = randint(0,99)
